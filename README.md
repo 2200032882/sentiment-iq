@@ -42,3 +42,11 @@ It extracts comments and performs advanced NLP to generate insights such as:
 cd sentiment-platform/backend
 pip install -r requirements.txt
 python -m uvicorn main:app --reload
+
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Results
+![Results](screenshots/results.png)
