@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 5173 --host",
-    "build": "vite build",
+    "build": "chmod +x node_modules/.bin/vite && vite build"
     "preview": "vite preview"
   },
   "dependencies": {
