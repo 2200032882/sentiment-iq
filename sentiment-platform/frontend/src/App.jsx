@@ -30,7 +30,10 @@ export default function App() {
     let mounted = true
     const run = async () => {
       try {
-        const { data } = await axios.get('/api/health', { timeout: 7000 })
+        const { data } = await axios.get(
+  'https://sentiment-iq-owur.onrender.com/api/health',
+  { timeout: 7000 }
+)
         if (mounted) setHealth({ status: data.status || 'ok', timestamp: data.timestamp || null })
       } catch {
         if (mounted) setHealth({ status: 'down', timestamp: null })

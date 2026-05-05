@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react'
 import axios from 'axios'
 
-const API_BASE = '/api'
+const API_BASE = 'https://sentiment-iq-owur.onrender.com/api'
 
 export function useAnalysis() {
   const [status, setStatus] = useState('idle') // idle | loading | success | error
